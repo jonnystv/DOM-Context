@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Favourite Dictator - Available on the Apple App Store & Google Play</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
     <script src="js/app.js"></script>
 </head>
 <body>
@@ -20,6 +22,7 @@
     <main>
 
         <h2>Enter the particulars of your autocrat of choice:</h2>
+        <p>(we've given you an example despot for inspiration) </p>
 
     <form id="dictator-details-form">
         <div id="form-container">
@@ -32,7 +35,6 @@
                     <option value="Servant of the People">Servant of the People</option>
                     <option value="Guide">Guide</option>
                     <option value="Emperor">Emperor</option>
-                    <option value="The all-powerful warrior who, because of his endurance and inflexible will to win, goes from conquest to conquest, leaving fire in his wake">The all-powerful warrior who, because of his endurance and inflexible will to win, goes from conquest to conquest, leaving fire in his wake</option>
                     <option value="President">President</option>
                     <option value="El Presidente">El Presidente</option>
                     <option value="President for Life">President for Life</option>
@@ -71,26 +73,30 @@
             </div>
 
         </div> <!--  END FORM CONATAINER -->
-        <input type="submit" value="Save Your Despot"/>
+        <input type="submit" class="submit" value="Save Your Despot"/>
     </form>
 
-    <button id="delete-all">Dispose of All Despots</button>
+    
 
-     <h1>A List of My Favourite Autocrats:</h1>
+     <h1 class="list">A List of My Favourite Autocrats:</h1>
      
      <ul id="dictator-list">
         <li id="sample-dictator-list-item" class="dictator-list-item">
-            <h3>President Donald Trump</h3>
-            <h4>Wannabe Tyrant</h4>
+            <h3 class="dictator-name">President</h3>
+            <h3 class="dictator-name">Donald</h3>
+            <h3 class="dictator-name">Trump</h3>
+            <h4 class="dictator-type">Wannabe Tyrant</h4>
 
         </li>
 
      </ul>
 
+     <button id="delete-all">Dispose of All Despots</button>
 
     </main>
     <footer>
-        <p>&copy; 2021 -  My Favourite Dictator Ltd - Unfortunately no dictators were harmed during the production of this app.</p>
+        <p>&copy; 2021 -  My Favourite Dictator Ltd</p>
+        <p>Unfortunately no dictators were harmed during the production of this app.</p>
     </footer>
 </body>
 </html>

@@ -1,0 +1,81 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: url(/images/barbed_wire.png);
+    background-repeat: repeat;
+    background-color: #6A0000;
+    color: white;
+    text-shadow: 2px 2px 2px #000;
+}
+
+/* body {
+    background: url(/images/barbed_wire.png);
+    background-repeat: repeat;
+
+} */
+
+header {
+    margin-bottom: 2em;
+    border-bottom: 1px solid white;
+}
+
+h1 {
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+#form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.form-element label {
+    display: block;
+    margin: 0.4em 0;
+}
+
+.form-element {
+    margin: 0 0 1em 1em;
+}
+
+.submit {
+    margin-bottom: 1em;
+}
+
+#delete-all, .submit {
+    margin-top: 0.5em ;
+    background-color: #430000;
+    border: 1px solid #ffffff;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+h1.list {
+    padding-top: 0.5em;
+    margin-top: 1.5em;
+    border-top: 1px solid white;
+}
+
+#dictator-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.dictator-list-item, #sample-dictator-list-item {
+    margin: 0.5rem 1rem 0.5rem 0rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    border: 1px solid #ffffff;
+    background-color: #430000;
+}
+
+footer {
+    margin-top: 2em;
+    text-align: left;
+}
+
+
+

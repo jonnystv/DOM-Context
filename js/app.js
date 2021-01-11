@@ -19,5 +19,9 @@ const createDictatorListItem = function (form) {
     const dictatorListItem = document.createElement('li');
     dictatorListItem.classList.add('dictator-list-item');
 
+    const title = document.createElement('h3');
+    title.textContent = form.title.value;
+    dictatorListItem.appendChild(title);
+
     return dictatorListItem;
 };

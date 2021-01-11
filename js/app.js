@@ -23,5 +23,19 @@ const createDictatorListItem = function (form) {
     title.textContent = form.title.value;
     dictatorListItem.appendChild(title);
 
+    const firstName = document.createElement('h3');
+    firstName.textContent = form.firstName.value;
+    dictatorListItem.appendChild(firstName);
+
+    const surname = document.createElement('h3');
+    surname.textContent = form.surname.value;
+    dictatorListItem.appendChild(surname);
+
+    const dictatorType = document.createElement('h4');
+    dictatorType.textContent = form.dictatorType.value;
+    dictatorListItem.appendChild(dictatorType);
+
+
+
     return dictatorListItem;
 };

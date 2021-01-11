@@ -1,8 +1,9 @@
-console.log('APP LOADED', document);
-
 document.addEventListener('DOMContentLoaded', () => {
     const dictatorDetailsForm = document.querySelector('#dictator-details-form');
     dictatorDetailsForm.addEventListener('submit', handleDDFormSubmit);
+
+    const dictatorDeleteButton = document.querySelector('#delete-all');
+    dictatorDeleteButton.addEventListener('click', handleDictatorDeleteButtonClick);
 });
 
 const handleDDFormSubmit = function (event) {
@@ -35,7 +36,10 @@ const createDictatorListItem = function (form) {
     dictatorType.textContent = form.dictatorType.value;
     dictatorListItem.appendChild(dictatorType);
 
-
-
     return dictatorListItem;
+};
+
+const handleDictatorDeleteButtonClick = function(event) {
+    const dictatorList = document.querySelector('#dictator-list');
+    dictatorList.innerHTML = '';
 };

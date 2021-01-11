@@ -6,7 +6,18 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const handleDDFormSubmit = function (event) {
-    event.preventDefault();    
+    event.preventDefault();
+    
+    const dictatorListItem = createDictatorListItem(event.target);
+    const dictatorList = document.querySelector('#dictator-list');
+    dictatorList.appendChild(dictatorListItem);
+
+    event.target.reset();
 };
 
-console.log('Form Submit Handler', document);
+const createDictatorListItem = function (form) {
+    const dictatorListItem = document.createElement('li');
+    dictatorListItem.classList.add('dictator-list-item');
+
+    return dictatorListItem;
+};

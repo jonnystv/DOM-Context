@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favourite Dictator - Available on the Apple App Store & Google Play</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <header>
+
+        <h1>Who's Your Favourite Dictator?</h1>
+
+        <p>The results will supplicate themselves obsequiously beneath the form.</p>
+
+
+    </header>
+
+    <main>
+
+        <h2>Enter the particulars of your autocrat of choice:</h2>
+
+    <form id="dictator-details-form">
+        <div id="form-container">
+
+            <div class="form-element">
+                <label for="title" class="select-input-title">Title</label>
+                <select id="title">
+                    <option value="" disabled selected></option>
+                    <option value="Dear Leader">Dear Leader</option>
+                    <option value="Servant of the People">Servant of the People</option>
+                    <option value="Guide">Guide</option>
+                    <option value="Emperor">Emperor</option>
+                    <option value="The all-powerful warrior who, because of his endurance and inflexible will to win, goes from conquest to conquest, leaving fire in his wake">The all-powerful warrior who, because of his endurance and inflexible will to win, goes from conquest to conquest, leaving fire in his wake</option>
+                    <option value="President">President</option>
+                    <option value="El Presidente">El Presidente</option>
+                    <option value="President for Life">President for Life</option>
+                    <option value="Captain">Captain</option>
+                    <option value="Guardian of the People">Guardian of the People</option>
+                    <option value="Great Leader">Great Leader</option>
+                    <option value="Chairman">Chairman</option>
+                </select>
+            </div>
+
+            <div class="form-element">
+                <label for="first-name" class="txt-input-title">First Name</label>
+                <input type="text" id="first-name" required/>
+            </div>
+
+            <div class="form-element">
+                <label for="surname" class="txt-input-title">Surname(s)</label>
+                <input type="text" id="surname" required/>
+            </div>
+
+            <div class="form-element">
+                <label for="alias" class="txt-input-title">Alias</label>
+                <input type="text" id="Alias" required/>
+            </div>
+
+            <div class="form-element">
+                <label for="dictator-type" class="select-input-title">Dictator Type</label>
+                <select id="dictator-type">
+                <option value="" disabled selected></option>
+                <option value="Enlightened Despot">Enlightened Despot</option>
+                <option value="Kleptocrat">Kleptocrat</option>
+                <option value="Murderer of Millions">Murderer of Millions</option>
+                <option value="Wannabe Tyrant">Wannabe Tyrant</option>
+                <option value="Standard Psychopath">Standard Psychopath</option>
+                <option value="Classic Despot">Classic Despot</option>
+                <option value="Violent Despot">Violent Despot</option>
+                <option value="Opportunist Despot">Opportunist Despot</option>
+                <option value="Military Dictator">Military Dictator</option>
+                <option value="Civilian Despot">Civillian Despot</option>
+                </select>
+            </div>
+
+        </div> <!--  END FORM CONATAINER -->
+        <input type="submit" value="Save Your Despot"/>
+    </form>
+
+    <button id="delete-all">Dispose of All Despots</button>
+
+     <h1>A List of My Favourite Autocrats:</h1>
+     
+     <ul id="dictator-list">
+        <li id="sample-dictator-list-item" class="dictator-list-item">
+            <h3>President Donald Trump</h3>
+            <h4>AKA: The Orange One</h4>
+            <h4>Wannabe Tyrant</h4>
+
+        </li>
+
+     </ul>
+
+
+    </main>
+    <footer>
+        <p>&copy; 2021 -  My Favourite Dictator Ltd - Unfortunately no dictators were harmed during the production of this app.</p>
+    </footer>
+</body>
+</html>
